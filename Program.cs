@@ -21,7 +21,7 @@ class Program {
             while (true) {
                 Console.Write(beurt ? "(X)" : "(O)");
                 Console.WriteLine(" Typ het coordinaat in (x,y)");
-                String[] coords = Console.ReadLine().Split(',');
+                string[] coords = Console.ReadLine().Split(',');
                 int x = Convert.ToInt32(coords[0]) - 1;
                 int y = Convert.ToInt32(coords[1]) - 1;
                 if (data[x,y] == 'X' || data[x,y] == 'O') {
